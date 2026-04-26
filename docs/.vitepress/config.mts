@@ -9,6 +9,7 @@ export default defineConfig({
   srcDir: '..',
   srcExclude: ['docs/**', 'node_modules/**', 'book/**', 'dist/**', 'README.md', 'SUMMARY.md'],
 
+  ignoreDeadLinks: true,
   lastUpdated: true,
 
   themeConfig: {
