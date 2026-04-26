@@ -1,4 +1,4 @@
-name: Deploy mdBook to GitHub Pages
+name: Deploy VitePress to GitHub Pages
 
 on:
   push:
@@ -19,13 +19,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: peaceiris/actions-mdbook@v2
+      - uses: actions/setup-node@v4
         with:
-          mdbook-version: latest
-      - run: mdbook build
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run docs:build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: book
+          path: docs/.vitepress/dist
 
   deploy:
     environment:
