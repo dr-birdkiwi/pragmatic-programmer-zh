@@ -1,0 +1,12 @@
+:root {
+    --content-font-size: 1.15rem;
+}
+
+.content main {
+    font-size: var(--content-font-size);
+    line-height: 1.8;
+}
+
+.sidebar .chapter li a {
+    font-size: 0.95rem;
+}

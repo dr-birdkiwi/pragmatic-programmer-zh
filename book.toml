@@ -6,3 +6,4 @@ src = "."
 
 [output.html]
 site-url = "/"
+additional-css = ["theme/custom.css"]
