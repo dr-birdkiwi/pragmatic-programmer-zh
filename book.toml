@@ -1,0 +1,8 @@
+[book]
+title = "《程序员修炼之道》中文翻译"
+authors = ["Jiwei Li"]
+language = "zh"
+src = "."
+
+[output.html]
+site-url = "/"
